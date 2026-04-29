@@ -1,6 +1,6 @@
 # Best Tools for LLM Second Brains / Long-Term Memory
 
-I've been researching tools and patterns for giving LLMs persistent, long-term memory — a "second brain" that survives across sessions. The problem: a single storage strategy (pure RAG, pure markdown, pure graph) always loses something. The best systems combine multiple representations.
+I've been researching tools and patterns for giving LLMs persistent, long-term memory: a "second brain" that survives across sessions. The problem: a single storage strategy (pure RAG, pure markdown, pure graph) always loses something. The best systems combine multiple representations.
 
 **What are you using? What's missing from this list?**
 
