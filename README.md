@@ -55,6 +55,12 @@ qmd mcp --http --daemon                               # persistent MCP server
 
 ---
 
+### 🧠 Persistent Memory Servers
+
+**[mnemory](https://github.com/fpytloun/mnemory)** — Self-hosted MCP server for persistent agent memory across conversations. The key idea: a single unified LLM call handles fact extraction, classification (episodic/semantic/procedural), and deduplication together — emitting explicit ADD/UPDATE/DELETE/SKIP decisions per fact rather than blindly appending. Contradiction resolution works automatically: "I drive a Skoda" followed by "I bought a Tesla" triggers an UPDATE rather than storing both. TTL-based expiry (7d for context, 90d for episodic) with reinforcement: reading a memory bumps its expiry forward, so frequently-recalled facts never silently disappear. Pinned "core memories" always load at session start regardless of recency or TTL. Built-in `fsck` health checker runs three phases: duplicate detection, contradiction scanning, and quality checks (prompt injection patterns, oversized facts). 17 MCP tools including `find_memories` (multi-query expansion + rerank) and `ask_memories` (synthesized NL answer). LoCoMo benchmark: 73.2% using GPT-4o-mini. Apache 2.0.
+
+---
+
 ### 🔄 Document Conversion
 
 **[MarkItDown](https://github.com/microsoft/markitdown)** — Microsoft's lightweight Python utility for converting anything to Markdown for LLM consumption. Handles PDF, DOCX, PPTX, XLSX, images (EXIF + OCR), audio (speech transcription), HTML, YouTube URLs, CSV, JSON, XML, ZIP. One CLI command or one Python call. Optional LLM for image descriptions. MIT license, plugin-extensible.
