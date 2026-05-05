@@ -72,6 +72,15 @@ markitdown diagram.png   # describes the image using LLM vision
 
 ---
 
+
+---
+
+### ☁️ Cloud Second Brains
+
+**[Reseek](https://reseek.net)** — Paid cloud "second brain" ($9/mo or $99/yr). Ingests notes, links (metadata extraction), PDFs (page-by-page), images (OCR), YouTube videos, and Twitter/X posts into a single semantic search index with an AI chat interface. MCP tools: `search-library`, `get-library-item`, `save-note`, `save-link` — accessed via personal access tokens. iOS/Android PWA. The closest commercial equivalent to a local second-brain stack, but cloud-only with no graph layer, no entity model, and no plain-file access. Validates the MCP-server-as-primary-dev-interface pattern.
+
+Key gaps versus local tools: no knowledge graph, no entity relationships, no offline use, no git-committable store. Key strength: first-class OCR ingest (screenshots, receipts, handwritten notes → searchable text) and YouTube/Twitter ingestion that most local stacks skip.
+
 ## What I'm Building
 
 I'm working on a system that combines all of these layers:
